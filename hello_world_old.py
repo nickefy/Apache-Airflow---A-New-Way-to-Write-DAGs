@@ -2,7 +2,7 @@ from datetime import timedelta
 from airflow.models import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.utils.dates import days_ago
-from airflow.operators.print_text_operator import PrintText
+from airflow.operators.print_text_old import PrintText
 
 text_to_print_dag = 'Hello World!'
 
