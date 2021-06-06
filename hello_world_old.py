@@ -2,6 +2,7 @@ from datetime import timedelta
 from airflow.models import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.utils.dates import days_ago
+from airflow.operators.print_text_operator import PrintText
 
 text_to_print_dag = 'Hello World!'
 
@@ -19,7 +20,7 @@ dag = DAG(
     catchup=False,
 )
 
-run_this = HelloWorldOperator(
+run_this = PrintText(
     task_id='Print Hello World',
     text_to_print=text_to_print_dag,
 )
