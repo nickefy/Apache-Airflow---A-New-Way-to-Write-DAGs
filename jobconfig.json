@@ -1,7 +1,0 @@
-{
-  "job_name": "Hello_World!",
-  "retries": "0",
-  "start_date": "2020-02-27",
-  "email": ["youremail@gmail.com"],
-  "schedule_interval": "None"
-}
