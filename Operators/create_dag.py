@@ -42,6 +42,7 @@ class CreateDagOperator:
         """
         job_dict_update = job_dict.copy()
         default_dag_args.update(job_dict_update)
+        dag = DAG(dag_id, schedule_interval=None, default_args=default_dag_args)
 
         task_dict_update = task_dict.copy()
         task_dict.clear()
